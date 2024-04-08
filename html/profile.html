@@ -1,1 +1,61 @@
-<!-- Profile page: This section allows you to view and manage your profile and settings -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../css/styles.css" />
+	</head>
+	<body>
+		<header class="header header--profile" aria-labelledby="title">
+			<h1 id="title">Quiz App</h1>
+		</header>
+		<main class="main main--profile">
+			<section class="section--user-intro">
+				<img class="user--icon" src="../assets/profile.png" alt="A user depicting icon" />
+				<h2 class="user--name">Max Doe</h2>
+			</section>
+			<section class="section--user-about_me">
+				<h3>About me</h3>
+				<p class="user--info-text">In the eerie shadow of shattered dreams, I emerged — a former pet rock whisperer turned amateur ghost hunter. With a penchant for the bizarre and a flair for the macabre, I navigate life's dark comedy with a twisted grin, finding solace in the absurdity of it all.</p>
+			</section>
+
+			<section class="section--counters">
+				<div aria-label="Counter for created questions" class="counter counter--questions">
+					<img src="../assets/question.png" alt="A chat symbol and questionmark depicting icon">
+					<p class="counter--number">10</p>
+				</div>
+				<div aria-label="Counter for created bookmarks" class="counter counter--bookmarks">
+					<img src="../assets/bookmark_filled.png" alt="A bookmark depicting icon">
+					<p class="counter--number">1</p>
+				</div>
+			</section>
+			<section class="section--settings">
+				<h3>Settings</h3>
+				<div class="setting-dark_mode">
+					<p>Dark Mode</p>
+					<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider round"></span>
+					  </label>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<nav>
+				<a href="../index.html" aria-label="Start Page">
+					<button type="button">
+						<img src="../assets/home.png" alt="Linked icon to start page" /></button
+				></a>
+				<a href="./bookmark.html" aria-label="Bookmark Page"
+					><button type="button">
+						<img src="../assets/bookmark.png" alt="Linked icon to bookmarks page" /></button
+				></a>
+				<a href="#" aria-label="Profile Page"
+					><button type="button" disabled>
+						<img src="../assets/profile_filled.png" alt="Linked icon to profile page" /></button
+				></a>
+			</nav>
+		</footer>
+	</body>
+</html>
