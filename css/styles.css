@@ -16,7 +16,7 @@
 	--border-base: solid 3px var(--color-dark-300);
 }
 
-/* header */
+/* HEADER */
 header {
 	--size: 10rem;
 
@@ -27,8 +27,13 @@ header {
 	font-size: 2rem;
 }
 
-/* question card */
+/* MAIN */
 
+main {
+	margin-block-end: 12rem;
+}
+
+/* question card */
 .card--question {
 	position: relative;
 	width: 80%;
@@ -66,6 +71,12 @@ header {
 	padding: 0.5em;
 	margin-inline-start: var(--size);
 	margin-block-end: var(--size);
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #fff;
 }
 
 nav {
