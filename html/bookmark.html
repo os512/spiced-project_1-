@@ -1,1 +1,55 @@
-<!-- Bookmark page: This is a dedicated space where you can exclusively view the questions you've bookmarked, similar to the ones marked on the home page. -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../css/styles.css" />
+	</head>
+	<body>
+		<header aria-labelledby="title">
+			<h1 id="title">Quiz App</h1>
+		</header>
+		<main>
+			<section class="card--question">
+				<img
+					class="card--bookmark"
+					src="../assets/bookmark_filled.png"
+					alt="Bookmark this quiz card by clicking here!"
+				/>
+				<p class="text--question">
+					Which character has a Ph.D. in theoretical physics and often uses the catchphrase
+					"Bazinga!"?
+				</p>
+				<button aria-label="Show answer" type="button" class="button--answer">
+					<a href="#"></a>Show answer
+				</button>
+				<button aria-label="Category: characters" type="button" class="button--tag">
+					<a href="#"></a>#characters
+				</button>
+				<button aria-label="Category: peculiarities" type="button" class="button--tag">
+					<a href="#"></a>#peculiarities
+				</button>
+				<button aria-label="Category: profession" type="button" class="button--tag">
+					<a href="#"></a>#profession
+				</button>
+			</section>
+		</main>
+		<footer>
+			<nav>
+				<a href="../index.html" aria-label="Start Page">
+					<button type="button" >
+						<img src="../assets/home.png" alt="Linked icon to start page" /></button
+				></a>
+				<a href="#" aria-label="Bookmark Page"
+					><button type="button" disabled>
+						<img src="../assets/bookmark_filled.png" alt="Linked icon to bookmarks page" /></button
+				></a>
+				<a href="html/profile.html" aria-label="Profile Page"
+					><button type="button">
+						<img src="../assets/profile.png" alt="Linked icon to profile page" /></button
+				></a>
+			</nav>
+		</footer>
+	</body>
+</html>
