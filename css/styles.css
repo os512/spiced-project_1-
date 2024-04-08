@@ -22,6 +22,24 @@ header {
 }
 
 /* question card */
+
+.card--question {
+	width: 80%;
+	margin: 3rem auto;
+}
+
+.card--question {
+	position: relative;
+}
+.card--bookmark {
+	--size: 4rem;
+
+	width: var(--size);
+	position: absolute;
+	right: 2rem;
+	top: calc(var(--size) / -2);
+}
+
 .text--question {
 	width: 45%;
 	font-size: 1.5rem;
