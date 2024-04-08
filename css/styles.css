@@ -11,7 +11,9 @@
 }
 
 :root {
-	--border-base: solid 3px gainsboro;
+	--color-dark-300: gainsboro;
+
+	--border-base: solid 3px var(--color-dark-300);
 }
 
 /* header */
@@ -69,17 +71,21 @@ header {
 nav {
 	display: flex;
 	justify-content: space-around;
-	padding-block: 1rem;
 	border-block: var(--border-base);
 }
 
 nav button {
 	background-color: white;
 	border-style: none;
+	padding: 1rem 4rem;
 	cursor: pointer;
 }
 
 button:disabled {
-	opacity: 0.2;
 	cursor: default;
+	background-color: var(--color-dark-300);
+}
+
+footer img {
+	width: 4rem;
 }
