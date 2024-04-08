@@ -24,19 +24,17 @@ header {
 /* question card */
 
 .card--question {
+	position: relative;
 	width: 80%;
 	margin: 3rem auto;
 }
 
-.card--question {
-	position: relative;
-}
 .card--bookmark {
 	--size: 4rem;
 
 	width: var(--size);
 	position: absolute;
-	right: 2rem;
+	right: 1rem;
 	top: calc(var(--size) / -2);
 }
 
@@ -46,3 +44,4 @@ header {
 	margin-inline: auto;
 	line-height: 1.3;
 }
+
