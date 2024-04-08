@@ -10,6 +10,11 @@
 	padding: 0;
 }
 
+:root {
+
+	--border-base: solid 3px gainsboro;
+}
+
 /* header */
 header {
 	--size: 10rem;
@@ -27,7 +32,7 @@ header {
 	position: relative;
 	width: 80%;
 	margin: 3rem auto;
-	border: solid 3px gainsboro;
+	border: var(--border-base);
 	padding-block-start: 3rem;
 }
 
@@ -61,3 +66,11 @@ header {
 	margin-inline-start: var(--size);
 	margin-block-end: var(--size);
 }
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	padding-block: 1rem;
+	border-block: var(--border-base);
+}
+
