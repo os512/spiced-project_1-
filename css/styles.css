@@ -27,6 +27,8 @@ header {
 	position: relative;
 	width: 80%;
 	margin: 3rem auto;
+	border: solid 3px gainsboro;
+	padding-block-start: 3rem;
 }
 
 .card--bookmark {
