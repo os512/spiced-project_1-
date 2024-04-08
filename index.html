@@ -1,5 +1,3 @@
-<!-- Profile page: This section allows you to view and manage your profile and settings -->
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -9,44 +7,70 @@
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
-		<header><h1>Quiz App</h1></header>
+		<header aria-labelledby="title">
+			<h1 id="title">Quiz App</h1>
+		</header>
 		<main>
 			<section class="card--question">
-				<img class="card--bookmark" src="assets/bookmark.png" alt="Bookmark by clicking on here!" />
+				<img
+					class="card--bookmark"
+					src="assets/bookmark.png"
+					alt="Bookmark this quiz card by clicking here!"
+				/>
 				<p class="text--question">
 					What is the name of the apartment building where the main characters live in The Big Bang
 					Theory?
 				</p>
-				<button type="button" class="button--answer"><a href="#"></a>Show answer</button>
-				<button type="button" class="tag"><a href=""></a>#characters</button>
-				<button type="button" class="tag"><a href=""></a>#peculiarities</button>
+				<button aria-label="Show answer" type="button" class="button--answer">
+					<a href="#"></a>Show answer
+				</button>
+				<button aria-label="Category: characters" type="button" class="button--tag">
+					<a href="#"></a>#characters
+				</button>
+				<button aria-label="Category: peculiarities" type="button" class="button--tag">
+					<a href="#"></a>#peculiarities
+				</button>
+				<button aria-label="Category: profession" type="button" class="button--tag">
+					<a href="#"></a>#profession
+				</button>
 			</section>
 			<section class="card--question">
 				<img
 					class="card--bookmark"
 					src="assets/bookmark_filled.png"
-					alt="Bookmark by clicking on here!"
+					alt="Bookmark this quiz card by clicking here!"
 				/>
 				<p class="text--question">
 					Which character has a Ph.D. in theoretical physics and often uses the catchphrase
 					"Bazinga!"?
 				</p>
-				<button type="button" class="button--answer"><a href="#"></a>Show answere</button>
-				<button type="button" class="tag"><a href="#"></a>#characters</button>
-				<button type="button" class="tag"><a href="#"></a>#peculiarities</button>
+				<button aria-label="Show answer" type="button" class="button--answer">
+					<a href="#"></a>Show answer
+				</button>
+				<button aria-label="Category: characters" type="button" class="button--tag">
+					<a href="#"></a>#characters
+				</button>
+				<button aria-label="Category: peculiarities" type="button" class="button--tag">
+					<a href="#"></a>#peculiarities
+				</button>
+				<button aria-label="Category: profession" type="button" class="button--tag">
+					<a href="#"></a>#profession
+				</button>
 			</section>
 		</main>
 		<footer>
 			<nav>
-				<a href="#">
+				<a href="#" aria-label="Start Page">
 					<button type="button" disabled>
-						<img src="assets/home_filled.png" alt="home" /></button
+						<img src="assets/home_filled.png" alt="Linked icon to start page" /></button
 				></a>
-				<a href="html/bookmark.html"
-					><button type="button"><img src="assets/bookmark.png" alt="bookmarks" /></button
+				<a href="html/bookmark.html" aria-label="Bookmark Page"
+					><button type="button">
+						<img src="assets/bookmark.png" alt="Linked icon to bookmarks page" /></button
 				></a>
-				<a href="html/profile.html"
-					><button type="button"><img src="assets/profile.png" alt="bookmarks" /></button
+				<a href="html/profile.html" aria-label="Profile Page"
+					><button type="button">
+						<img src="assets/profile.png" alt="Linked icon to profile page" /></button
 				></a>
 			</nav>
 		</footer>
