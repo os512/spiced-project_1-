@@ -5,16 +5,26 @@
 *,
 *::before,
 *::after {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
+/* header */
 header {
-	--size: 5rem;
-	
+	--size: 10rem;
+
 	text-align: center;
 	line-height: var(--size);
 	height: var(--size);
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	font-size: 2rem;
+}
+
+/* question card */
+.text--question {
+	width: 45%;
+	font-size: 1.5rem;
+	margin-inline: auto;
+	line-height: 1.3;
 }
