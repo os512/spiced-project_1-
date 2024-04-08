@@ -52,3 +52,10 @@ header {
 	cursor: pointer;
 }
 
+.tag {
+	--size: 1rem;
+
+	padding: 0.5em;
+	margin-inline-start: var(--size);
+	margin-block-end: var(--size);
+}
