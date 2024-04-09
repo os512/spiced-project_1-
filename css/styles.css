@@ -29,6 +29,10 @@ h3 {
 	font-family: var(--ff-sans);
 }
 
+a {
+	text-decoration: none;
+}
+
 /* HEADER */
 header {
 	--size: 10rem;
