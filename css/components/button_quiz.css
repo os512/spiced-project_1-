@@ -9,10 +9,10 @@
 	cursor: pointer;
 }
 
-.button__quiz--showAnswer {
+.quiz-button__showAnswer {
 	/* background-color: teal; */
 }
 
-.button__quiz--hideAnswer {
+.quiz-button__hideAnswer {
 	/* background-color: coral; */
 }
