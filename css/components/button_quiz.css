@@ -1,0 +1,18 @@
+.button__quiz {
+	display: block;
+	text-align: center;
+	width: 20ch;
+	margin: 3rem auto;
+	border: var(--border-base);
+	border-radius: var(--border-radius-base);
+	padding: 1em;
+	cursor: pointer;
+}
+
+.button__quiz--showAnswer {
+	/* background-color: teal; */
+}
+
+.button__quiz--hideAnswer {
+	/* background-color: coral; */
+}

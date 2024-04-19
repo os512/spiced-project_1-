@@ -1,0 +1,23 @@
+.card__question {
+	position: relative;
+	width: 80%;
+	margin: 3rem auto;
+	border: var(--border-base);
+	padding-block-start: 3rem;
+}
+
+.card__bookmark {
+	--size: 4rem;
+
+	width: var(--size);
+	position: absolute;
+	right: 1rem;
+	top: calc(var(--size) / -2);
+}
+
+.text__question {
+	width: 60%;
+	font-size: 1.5rem;
+	margin-inline: auto;
+	line-height: 1.3;
+}
