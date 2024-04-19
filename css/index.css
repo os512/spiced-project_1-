@@ -25,7 +25,8 @@
 	line-height: 1.3;
 }
 
-.button__answer {
+
+.button__quiz {
 	display: block;
 	text-align: center;
 	width: 20ch;
@@ -35,6 +36,15 @@
 	padding: 1em;
 	cursor: pointer;
 }
+
+.button__quiz--showAnswer {
+	background-color: teal;
+}
+
+.button__quiz--hideAnswer {
+	background-color: coral;
+}
+
 
 .tag {
 	--size: 1rem;
