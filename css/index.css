@@ -27,16 +27,25 @@
 
 .button__answer {
 	display: block;
-	padding: 1em;
+	text-align: center;
+	width: 20ch;
 	margin: 3rem auto;
+	border: var(--border-base);
+	border-radius: var(--border-radius-base);
+	padding: 1em;
 	cursor: pointer;
 }
 
-.button__tag {
+.tag {
 	--size: 1rem;
 
-	padding: 0.5em;
+	display: inline-block;
 	margin-inline-start: var(--size);
+	border: var(--border-tags);
+	border-radius: var(--border-radius-tags);
+	padding: 0.5em;
+	color: var(--color-dark-900);
+	background-color: var(--color-dark-300);
 	margin-block-end: var(--size);
 	cursor: pointer;
 }
