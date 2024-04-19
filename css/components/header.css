@@ -1,0 +1,13 @@
+@import "../global.css";
+
+
+/* HEADER */
+header {
+	--size: 10rem;
+
+	text-align: center;
+	line-height: var(--size);
+	height: var(--size);
+	border-block: var(--border-base);
+	font-size: 2rem;
+}

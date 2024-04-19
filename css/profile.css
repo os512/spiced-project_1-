@@ -1,0 +1,143 @@
+.main__profile {
+	/* display: flex; */
+	/* flex-direction: column; */
+	width: 80%;
+	margin-inline: auto;
+}
+
+.section__profile {
+	margin-block: 3rem;
+}
+
+/* user */
+.section__user-intro {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.section__user-intro h2 {
+	font-size: 3rem;
+}
+
+.section__user-about_me {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+
+.section__user-about_me h3 {
+	font-size: 1.5rem;
+}
+
+.section__user-about_me p {
+	font-size: 1.2rem;
+}
+
+/* counters */
+.section__counters {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.section__counters img {
+	width: 3rem;
+}
+
+.counter__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 9rem;
+	border: solid 3px var(--color-dark-900);
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+}
+
+.counter__number {
+	font-family: var(--ff-sans);
+
+	font-size: 2rem;
+}
+
+/* settings */
+.section__settings {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+
+.section__settings h3 {
+	font-size: 1.5rem;
+}
+
+.section__settings p {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.setting-dark_mode {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* toggle switch */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--color-dark-300);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: var(--color-dark-100);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+input:checked + .slider {
+	background-color: var(--color-dark-900);
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px var(--color-dark-900);
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}

@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--color-dark-100: hsl(0, 0%, 100%);
+	--color-dark-300: hsl(0, 0%, 80%);
+	--color-dark-500: hsl(0, 0%, 50%);
+	--color-dark-600: hsl(0, 0%, 30%);
+	--color-dark-900: hsl(0, 0%, 0%);
+
+	--border-base: solid 3px var(--color-dark-300);
+
+	--ff-sans: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* BODY */
+body, h1,
+h3 {
+	color: var(--color-dark-500);
+	font-family: var(--ff-sans);
+}
+
+a {
+	text-decoration: none;
+}
+
+main {
+	margin-block-end: 12rem;
+}
