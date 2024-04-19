@@ -18,11 +18,11 @@
 /* main */
 
 
-/**************************
+/* *************************
 ****** MEDIA QUERIES ******
 **************************/
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	body {
 		background-color: var(--color-dark-600);
 		color: var(--color-dark-100);
@@ -36,4 +36,4 @@
 	background-color: var(--color-dark-500);
 
 	}
-}
+} */
