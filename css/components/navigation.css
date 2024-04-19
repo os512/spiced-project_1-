@@ -11,14 +11,14 @@ nav {
 	border-block: var(--border-base);
 }
 
-nav button {
+nav a {
 	background-color: var(--color-dark-100);
 	border-style: none;
 	padding: 1rem 4rem;
 	cursor: pointer;
 }
 
-button:disabled {
+nav a:disabled {
 	cursor: default;
 	background-color: var(--color-dark-300);
 }
