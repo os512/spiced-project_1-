@@ -15,7 +15,7 @@
 	top: calc(var(--size) / -2);
 }
 
-.text__question {
+.card__title {
 	width: 60%;
 	font-size: 1.5rem;
 	margin-inline: auto;
