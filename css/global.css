@@ -14,12 +14,16 @@
 	--color-dark-900: hsl(0, 0%, 0%);
 
 	--border-base: solid 3px var(--color-dark-300);
+	--border-tags: solid 1px var(--color-dark-600);
+	--border-radius-base: 0.5em;
+	--border-radius-tags: 0.25em;
 
 	--ff-sans: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /* BODY */
-body, h1,
+body,
+h1,
 h3 {
 	color: var(--color-dark-500);
 	font-family: var(--ff-sans);
@@ -28,6 +32,8 @@ h3 {
 a {
 	text-decoration: none;
 }
+
+
 
 main {
 	margin-block-end: 12rem;
