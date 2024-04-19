@@ -1,0 +1,13 @@
+.tag {
+	--size: 1rem;
+
+	display: inline-block;
+	margin-inline-start: var(--size);
+	border: var(--border-tags);
+	border-radius: var(--border-radius-tags);
+	padding: 0.5em;
+	color: var(--color-dark-900);
+	background-color: var(--color-dark-300);
+	margin-block-end: var(--size);
+	cursor: pointer;
+}

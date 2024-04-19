@@ -1,0 +1,28 @@
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: var(--color-dark-100);
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	border-block: var(--border-base);
+}
+
+nav a {
+	background-color: var(--color-dark-100);
+	border-style: none;
+	padding: 1rem 4rem;
+	cursor: pointer;
+}
+
+nav a:disabled {
+	cursor: default;
+	background-color: var(--color-dark-300);
+}
+
+footer img {
+	width: 4rem;
+}

@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--color-dark-100: hsl(0, 0%, 100%);
+	--color-dark-300: hsl(0, 0%, 80%);
+	--color-dark-500: hsl(0, 0%, 50%);
+	--color-dark-600: hsl(0, 0%, 30%);
+	--color-dark-900: hsl(0, 0%, 0%);
+
+	--border-base: solid 3px var(--color-dark-300);
+	--border-tags: solid 1px var(--color-dark-600);
+	--border-radius-base: 0.5em;
+	--border-radius-tags: 0.25em;
+
+	--ff-sans: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body,
+h1,
+h3 {
+	color: var(--color-dark-500);
+	font-family: var(--ff-sans);
+}
+
+a {
+	text-decoration: none;
+}
+
+main {
+	margin-block-end: 12rem;
+}
+
+/**************************
+****** MEDIA QUERIES ******
+**************************/
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: var(--color-dark-600);
+		color: var(--color-dark-100);
+	}
+
+	h1,
+	h2,
+	h3 {
+		color: var(--color-dark-500);
+	}
+
+	.slider:before {
+		background-color: var(--color-dark-500);
+	}
+}
