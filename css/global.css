@@ -28,7 +28,7 @@ h3 {
 	font-family: var(--ff-sans);
 }
 
-h2 {
+h2,p {
 	color: var(--color-dark-900);
 	font-weight: 600;
 }
@@ -56,7 +56,7 @@ main {
 		color: var(--color-dark-500);
 	}
 
-	h2 {
+	h2, p {
 		color: var(--color-dark-100);
 	}
 
