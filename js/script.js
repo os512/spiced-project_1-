@@ -25,10 +25,10 @@ bookmarkIcons.forEach((bookmarkIcon) => {
  */
 showAnswerButtons.forEach((showAnswerButton, i) => {
 	showAnswerButton.addEventListener("click", () => {
-		answers.forEach((answer, j) => {
-			if (i === j) {
-				answer.classList.toggle("hidden");
-			}
-		});
+		showAnswerButton.textContent === "Hide answer"
+			? (showAnswerButton.textContent = "Show answer")
+			: (showAnswerButton.textContent = "Hide answer");
+
+		answers.forEach((answer, j) => (i === j ? answer.classList.toggle("hidden") : false));
 	});
 });
