@@ -1,6 +1,6 @@
 const bookmarkIcons = document.querySelectorAll(".card__bookmark");
-const answer = document.querySelector(".card__answer");
-const buttonShowAnswer = document.querySelector(".quiz-button__showAnswer");
+const answers = document.querySelectorAll(".card__answer");
+const showAnswerButtons = document.querySelectorAll(".quiz-button__showAnswer");
 
 /**
  * Toggles the state of bookmarks via click.
@@ -17,6 +17,18 @@ bookmarkIcons.forEach((bookmarkIcon) => {
 	});
 });
 
-buttonShowAnswer.addEventListener("click", () => {
-	answer.classList.toggle("hidden");
+/**
+ * Shows/hides answers on click.
+ *
+ * @param {NodeList} showAnswerButtons - The list of show answer buttons.
+ * @param {NodeList} answers - The list of answer elements.
+ */
+showAnswerButtons.forEach((showAnswerButton, i) => {
+	showAnswerButton.addEventListener("click", () => {
+		answers.forEach((answer, j) => {
+			if (i === j) {
+				answer.classList.toggle("hidden");
+			}
+		});
+	});
 });
