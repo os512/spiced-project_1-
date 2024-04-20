@@ -6,7 +6,7 @@ Certainly! Here are 10 Big Bang Theory quiz questions along with their answers f
 
 - Answer: The Pasadena Cheesecake Factory Apartments
 
-**2. Question:** Which character has a Ph.D. in astrophysics and often uses the catchphrase "Bazinga!"?
+**2. Question:** Which character has a Ph.D. in Theoretical Physics and often uses the catchphrase "Bazinga!"?
 
 - Answer: Sheldon Cooper
 
