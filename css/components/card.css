@@ -1,11 +1,11 @@
 .card__question {
 	position: relative;
-	border: var(--border-base);
+	border: var(--border-base-300);
 	padding-block-start: 3rem;
 }
 
 .card__question + .card__question {
-	margin-block-start: 8rem;
+	margin-block-start: 6rem;
 
 }
 
