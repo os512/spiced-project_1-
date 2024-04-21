@@ -14,3 +14,8 @@ form {
 		margin-block-start: calc(var(--margin) / 5);
 	}
 }
+
+/* Add space between form and user created quiz card */
+section + section {
+	margin-block-start: 8rem;
+}
