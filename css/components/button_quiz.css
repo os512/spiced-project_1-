@@ -3,7 +3,7 @@
 	text-align: center;
 	width: 20ch;
 	margin: 3rem auto;
-	border: var(--border-base);
+	border: var(--border-base-300);
 	border-radius: var(--border-radius-base);
 	padding: 1em;
 	cursor: pointer;
