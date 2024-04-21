@@ -1,12 +1,7 @@
 @import "./styles.css";
 
-.main__profile {
-	width: 80%;
-	margin-inline: auto;
-}
-
-.section__profile {
-	margin-block: 3rem;
+.section__profile + .section__profile {
+	padding-block-start: 4rem;
 }
 
 /* user */
@@ -42,7 +37,7 @@
 }
 
 .section__counters img {
-	width: 3rem;
+	height: 2rem;
 }
 
 .counter__wrapper {

@@ -28,7 +28,8 @@ h3 {
 	font-family: var(--ff-sans);
 }
 
-h2,p {
+h2,
+p {
 	color: var(--color-dark-900);
 	font-weight: 600;
 }
@@ -38,7 +39,18 @@ a {
 }
 
 main {
-	margin-block-end: 12rem;
+	padding-block: 6rem 12rem;
+	padding-inline: 10%;
+	background-color: lightcoral;
+	min-height: 100vh;
+}
+
+section {
+	--width: 700px;
+
+	max-width: var(--width);
+	margin-inline: auto;
+	padding-inline: min(10%, calc(var(--width) * 0.1));
 }
 
 /**************************
@@ -56,7 +68,8 @@ main {
 		color: var(--color-dark-500);
 	}
 
-	h2, p {
+	h2,
+	p {
 		color: var(--color-dark-100);
 	}
 

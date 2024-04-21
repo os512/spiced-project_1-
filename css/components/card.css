@@ -1,9 +1,12 @@
 .card__question {
 	position: relative;
-	width: 80%;
-	margin: 3rem auto;
 	border: var(--border-base);
 	padding-block-start: 3rem;
+}
+
+.card__question + .card__question {
+	margin-block-start: 8rem;
+
 }
 
 .card__bookmark {
@@ -17,7 +20,6 @@
 
 .card__title,
 .card__answer {
-	width: 60%;
 	font-size: 1.5rem;
 	margin-inline: auto;
 	line-height: 1.3;
