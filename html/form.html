@@ -15,13 +15,18 @@
 		</header>
 		<main class="main main__form">
 			<section class="card__form">
-				<form action="">
-					<label for="">Your question</label>
-					<input type="text" id="form-question" />
-					<label for="">Your answer</label>
-					<input type="text" id="form-answer" />
-					<label for="">Your tag</label>
-					<input type="text" id="form-tag" />
+				<h2 id="form__title" class="form__title">New Card</h2>
+				<p id="form__description">
+					Get ready to spice up your quiz game! Just dive into the form below and start creating
+					your own. Let's make learning fun!
+				</p>
+				<form aria-labelledby="form__title">
+					<label for="form__question">Your question:</label>
+					<textarea name="form__question" id="form__question" cols="30" rows="10"></textarea>
+					<label for="form__answer">Your answer:</label>
+					<textarea name="form__answer" id="form__answer" cols="30" rows="10"></textarea>
+					<label for="form__tag">Your tag:</label>
+					<input type="text" name="form__tag" id="form__tag" />
 					<button type="submit">Submit</button>
 				</form>
 			</section>
