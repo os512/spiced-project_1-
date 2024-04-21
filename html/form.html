@@ -20,13 +20,25 @@
 					Get ready to spice up your quiz game! Just dive into the form below and start creating
 					your own. Let's make learning fun!
 				</p>
-				<form aria-labelledby="form__title">
+				<form aria-labelledby="form__title" data-form="form-new-quiz-card">
 					<label for="form__question">Your question:</label>
-					<textarea name="form__question" id="form__question" cols="30" rows="10"></textarea>
+					<textarea
+						name="form__question"
+						id="form__question"
+						data-form-question="form-question"
+						cols="30"
+						rows="10"
+					></textarea>
 					<label for="form__answer">Your answer:</label>
-					<textarea name="form__answer" id="form__answer" cols="30" rows="10"></textarea>
+					<textarea
+						name="form__answer"
+						id="form__answer"
+						data-form-answer="form-answer"
+						cols="30"
+						rows="10"
+					></textarea>
 					<label for="form__tag">Your tag:</label>
-					<input type="text" name="form__tag" id="form__tag" />
+					<input type="text" name="form__tag" id="form__tag" data-form-tag="form-tag" />
 					<button type="submit">Submit</button>
 				</form>
 			</section>
