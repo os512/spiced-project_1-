@@ -1,1 +1,16 @@
 @import "./styles.css";
+
+form {
+	--margin: 3rem;
+
+	display: flex;
+	flex-direction: column;
+
+	& > :nth-child(odd) {
+		margin-block-start: var(--margin);
+	}
+
+	& > :nth-child(even) {
+		margin-block-start: calc(var(--margin) / 5);
+	}
+}
