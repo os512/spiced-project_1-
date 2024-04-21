@@ -1,17 +1,48 @@
 (function () {
 	"use strict";
 
-	const main = document.querySelector(".main__form");
-	const userCreatedQuestion = main.querySelector('[data-form-question="form-question"]');
-	const userCreatedAnswer = main.querySelector('[data-form-answer="form-answer"]');
-	const userCreatedTag = main.querySelector('[data-form-tag="form-tag"]');
-	const form = main.querySelector('[data-form="form-new-quiz-card"]');
-	
+	const main = document.querySelector(".main__form"),
+		userCreatedQuestion = main.querySelector('[data-form-question="form-question"]'),
+		userCreatedAnswer = main.querySelector('[data-form-answer="form-answer"]'),
+		userCreatedTag = main.querySelector('[data-form-tag="form-tag"]'),
+		form = main.querySelector('[data-form="form-new-quiz-card"]');
+
 	form.addEventListener("submit", (e) => {
 		e.preventDefault();
-		createSectionChildElements();
+
+		// Storing returned object of newly created elements
+		const createdCardElements = createSectionChildElements();
+
+		// Add toggle functionality for bookmark icon
+		//
+		createdCardElements.image.addEventListener("click", (e) => {
+			if (e.target.getAttribute("src") === "../assets/bookmark.png") {
+				e.target.setAttribute("src", "../assets/bookmark_filled.png");
+			} else {
+				e.target.setAttribute("src", "../assets/bookmark.png");
+			}
+		});
+
+		// Add toggle functionality for show/hide answer button
+		//
+		createdCardElements.anchor.addEventListener("click", (e) => {
+			if (e.target.textContent === "Hide answer") {
+				e.target.textContent = "Show answer";
+				e.target.setAttribute("aria-label", "Show answer");
+			} else {
+				e.target.textContent = "Hide answer";
+				e.target.setAttribute("aria-label", "Hide answer");
+			}
+			// Hide/unhide answer
+			createdCardElements.paragraph.classList.toggle("hidden");
+		});
 	});
 
+	/**
+	 * Creates a section element.
+	 *
+	 * @returns {Object} - An object containing the created section element.
+	 */
 	function createSection() {
 		const section = document.createElement("section");
 		section.classList.add("card__question");
@@ -21,6 +52,11 @@
 		return section;
 	}
 
+	/**
+	 * Creates child elements for a section and returns them as an object.
+	 *
+	 * @returns {Object} - An object containing the created child elements.
+	 */
 	function createSectionChildElements() {
 		const section = createSection();
 
@@ -61,5 +97,7 @@
 		// Append all elements to section
 		//
 		section.append(image, title, anchor, paragraph, tag);
+
+		return { image, title, anchor, paragraph, tag };
 	}
 })();
