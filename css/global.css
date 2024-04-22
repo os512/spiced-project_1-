@@ -56,7 +56,8 @@ a {
 main {
 	padding-block: 6rem 12rem;
 	padding-inline: 10%;
-	background-color: lightcoral;
+	/* background-color: lightcoral; */
+	color: var(--color-dark-900);
 	min-height: 100vh;
 }
 
@@ -73,6 +74,7 @@ input,
 button {
 	border-radius: var(--border-radius-base);
 	border-style: none;
+	border: var(--border-base-300);
 	padding: 1em;
 	font-family: var(--ff-user-input);
 }
@@ -81,9 +83,16 @@ button {
 	align-self: flex-end;
 	width: var(--button-width);
 	border: var(--border-base-100);
-	background-color: transparent;
+	background-color: var(--color-dark-600);
 	color: var(--color-dark-100);
 	cursor: pointer;
+	transition: 300ms all ease-in-out;
+}
+
+button:hover {
+	background-color: var(--color-dark-100);
+	border: var(--border-base-300);
+	color: var(--color-dark-600);
 }
 
 /**************************

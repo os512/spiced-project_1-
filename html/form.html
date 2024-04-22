@@ -20,37 +20,41 @@
 		<main class="main main__form">
 			<section class="card__form">
 				<h2 id="form__title" class="form__title">New Card</h2>
-				<p id="form__description">
+				<p id="form__description" class="form__description">
 					Get ready to spice up your quiz game! Just dive into the form below and start creating
 					your own. Let's make learning fun!
 				</p>
 				<form aria-labelledby="form__title" data-form="form-new-quiz-card">
-					<label for="form__question">Your question:</label>
-					<textarea
-						name="form__question"
-						id="form__question"
-						data-form-question="form-question"
-						cols="30"
-						rows="10"
-						placeholder="Add your quiz question here..."
-						maxlength="150"
-						autofocus
-						required
-					></textarea>
+					<div class="input__wrapper">
+						<label for="form__question">Your question:</label>
+						<textarea
+							name="form__question"
+							id="form__question"
+							data-form-question="form-question"
+							cols="30"
+							rows="4"
+							placeholder="Add your quiz question here..."
+							maxlength="150"
+							autofocus
+							required
+						></textarea>
+					</div>
 					<small class="form__character-count"
 						>(<span data-js="amountLeft-form-question"></span> characters left)
 					</small>
-					<label for="form__answer">Your answer:</label>
-					<textarea
-						name="form__answer"
-						id="form__answer"
-						data-form-answer="form-answer"
-						cols="30"
-						rows="10"
-						placeholder="Add your quiz answer here..."
-						maxlength="150"
-						required
-					></textarea>
+					<div class="input__wrapper">
+						<label for="form__answer">Your answer:</label>
+						<textarea
+							name="form__answer"
+							id="form__answer"
+							data-form-answer="form-answer"
+							cols="30"
+							rows="4"
+							placeholder="Add your quiz answer here..."
+							maxlength="150"
+							required
+						></textarea>
+					</div>
 					<small class="form__character-count"
 					>(<span data-js="amountLeft-form-answer"></span> characters left)
 				</small>
