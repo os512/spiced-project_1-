@@ -33,9 +33,13 @@
 						cols="30"
 						rows="10"
 						placeholder="Add your quiz question here..."
+						maxlength="150"
 						autofocus
 						required
 					></textarea>
+					<small class="form__character-count"
+						>(<span data-js="amountLeft-form-question"></span> characters left)
+					</small>
 					<label for="form__answer">Your answer:</label>
 					<textarea
 						name="form__answer"
@@ -44,8 +48,12 @@
 						cols="30"
 						rows="10"
 						placeholder="Add your quiz answer here..."
+						maxlength="150"
 						required
 					></textarea>
+					<small class="form__character-count"
+					>(<span data-js="amountLeft-form-answer"></span> characters left)
+				</small>
 					<label for="form__tag">Your tag:</label>
 					<input
 						type="text"

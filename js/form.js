@@ -5,7 +5,9 @@
 		userCreatedQuestion = main.querySelector('[data-form-question="form-question"]'),
 		userCreatedAnswer = main.querySelector('[data-form-answer="form-answer"]'),
 		userCreatedTag = main.querySelector('[data-form-tag="form-tag"]'),
-		form = main.querySelector('[data-form="form-new-quiz-card"]');
+		form = main.querySelector('[data-form="form-new-quiz-card"]'),
+		charCountPrintQuestion = main.querySelector('[data-js="amountLeft-form-question"]'),
+		charCountPrintAnswer = main.querySelector('[data-js="amountLeft-form-answer"]');
 
 	form.addEventListener("submit", (e) => {
 		e.preventDefault();
@@ -100,4 +102,48 @@
 
 		return { image, title, anchor, paragraph, tag };
 	}
+
+	/////////////////////////////
+	/////  ⬇︎  TESTZONE  ⬇︎  /////
+	/////////////////////////////
+
+	// Counting question input
+	//
+	const maxLengthQuestion = +userCreatedQuestion.getAttribute("maxlength");
+
+	const updateCharatersLeftQuestion = (value) => {
+		charCountPrintQuestion.textContent = value;
+	};
+	updateCharatersLeftQuestion(maxLengthQuestion);
+
+	// Retrieve correct number for exisiting text before input event is triggered
+	updateCharatersLeftQuestion(maxLengthQuestion - +userCreatedQuestion.value.length);
+
+	userCreatedQuestion.addEventListener("input", () => {
+		updateCharatersLeftQuestion(maxLengthQuestion - +userCreatedQuestion.value.length);
+	});
+
+
+	
+	// Counting answer input
+	//
+	const maxLengthAnswer = +userCreatedAnswer.getAttribute("maxlength");
+	
+	const updateCharatersLeftAnswer = (value) => {
+		charCountPrintAnswer.textContent = value;
+	};
+	updateCharatersLeftAnswer(maxLengthAnswer);
+
+	// Retrieve correct number for exisiting text before input event is triggered
+	updateCharatersLeftAnswer(maxLengthAnswer - +userCreatedAnswer.value.length);
+
+	userCreatedAnswer.addEventListener("input", () => {
+		updateCharatersLeftAnswer(maxLengthAnswer - +userCreatedAnswer.value.length);
+	});
+
+
+
+	/////////////////////////////
+	/////  ⬆︎  TESTZONE  ⬆︎  /////
+	/////////////////////////////
 })();
