@@ -103,47 +103,26 @@
 		return { image, title, anchor, paragraph, tag };
 	}
 
-	/////////////////////////////
-	/////  ⬇︎  TESTZONE  ⬇︎  /////
-	/////////////////////////////
+	/**
+	 * Generic function to update characters left.
+	 *
+	 * @param {HTMLElement} inputElement - The input element to update characters left for.
+	 * @param {string} maxLengthAttribute - The attribute name that specifies the maximum length of the input.
+	 * @param {HTMLElement} charCountPrint - The element to display the remaining characters count.
+	 */
+	function updateCharactersLeft(inputElement, maxLengthAttribute, charCountPrint) {
+		const maxLength = +inputElement.getAttribute(maxLengthAttribute);
 
-	// Counting question input
-	//
-	const maxLengthQuestion = +userCreatedQuestion.getAttribute("maxlength");
+		function updateDisplay() {
+			const charactersLeft = maxLength - inputElement.value.length;
+			charCountPrint.textContent = charactersLeft;
+		}
+		// Retrieve correct number for exisiting text before input event is triggered
+		updateDisplay();
 
-	const updateCharatersLeftQuestion = (value) => {
-		charCountPrintQuestion.textContent = value;
-	};
-	updateCharatersLeftQuestion(maxLengthQuestion);
-
-	// Retrieve correct number for exisiting text before input event is triggered
-	updateCharatersLeftQuestion(maxLengthQuestion - +userCreatedQuestion.value.length);
-
-	userCreatedQuestion.addEventListener("input", () => {
-		updateCharatersLeftQuestion(maxLengthQuestion - +userCreatedQuestion.value.length);
-	});
-
-
-	
-	// Counting answer input
-	//
-	const maxLengthAnswer = +userCreatedAnswer.getAttribute("maxlength");
-	
-	const updateCharatersLeftAnswer = (value) => {
-		charCountPrintAnswer.textContent = value;
-	};
-	updateCharatersLeftAnswer(maxLengthAnswer);
-
-	// Retrieve correct number for exisiting text before input event is triggered
-	updateCharatersLeftAnswer(maxLengthAnswer - +userCreatedAnswer.value.length);
-
-	userCreatedAnswer.addEventListener("input", () => {
-		updateCharatersLeftAnswer(maxLengthAnswer - +userCreatedAnswer.value.length);
-	});
-
-
-
-	/////////////////////////////
-	/////  ⬆︎  TESTZONE  ⬆︎  /////
-	/////////////////////////////
+		inputElement.addEventListener("input", updateDisplay);
+	}
+	// Apply generic function to both question and answer inputs
+	updateCharactersLeft(userCreatedQuestion, "maxlength", charCountPrintQuestion);
+	updateCharactersLeft(userCreatedAnswer, "maxlength", charCountPrintAnswer);
 })();
