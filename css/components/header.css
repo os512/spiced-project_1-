@@ -8,6 +8,6 @@ header {
 	text-align: center;
 	line-height: var(--size);
 	height: var(--size);
-	border-block: var(--border-base);
+	border-block: var(--border-base-300);
 	font-size: 2rem;
 }

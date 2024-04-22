@@ -1,9 +1,12 @@
 .card__question {
 	position: relative;
-	width: 80%;
-	margin: 3rem auto;
-	border: var(--border-base);
+	border: var(--border-base-300);
 	padding-block-start: 3rem;
+}
+
+.card__question + .card__question {
+	margin-block-start: 6rem;
+
 }
 
 .card__bookmark {
@@ -15,9 +18,17 @@
 	top: calc(var(--size) / -2);
 }
 
-.text__question {
-	width: 60%;
+.card__title,
+.card__answer {
 	font-size: 1.5rem;
 	margin-inline: auto;
 	line-height: 1.3;
+}
+
+.card__answer {
+	margin-block-end: 3rem;
+}
+
+.hidden {
+	display: none;
 }

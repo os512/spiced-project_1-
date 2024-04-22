@@ -4,11 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="../css/styles.css" />
 		<link rel="stylesheet" href="../css/profile.css" />
 		<link rel="stylesheet" href="../css/components/toggle_switch.css" />
 		<link rel="stylesheet" href="../css/components/navigation.css" />
 		<link rel="shortcut icon" href="data:x-icon" type="image/x-icon" />
+		<script src="../js/profil.js" defer></script>
 	</head>
 	<body>
 		<header class="header header__profile" aria-labelledby="title">
@@ -32,11 +32,11 @@
 			<section class="section__profile section__counters">
 				<div aria-label="Counter for created questions" class="counter__wrapper counter__questions">
 					<img src="../assets/question.png" alt="A chat symbol and questionmark depicting icon" />
-					<p class="counter__number">10</p>
+					<h2 class="counter__number">10</h2>
 				</div>
 				<div aria-label="Counter for created bookmarks" class="counter__wrapper counter__bookmarks">
 					<img src="../assets/bookmark_filled.png" alt="A bookmark depicting icon" />
-					<p class="counter__number">1</p>
+					<h2 class="counter__number">1</h2>
 				</div>
 			</section>
 
@@ -45,7 +45,7 @@
 				<div class="setting-dark_mode">
 					<p class="toggle-description">Dark Mode</p>
 					<label class="switch">
-						<input type="checkbox" checked />
+						<input type="checkbox" data-toggle="checkbox-toggle-darkmode" checked />
 						<span class="slider round"></span>
 					</label>
 				</div>
@@ -58,6 +58,9 @@
 				</a>
 				<a href="./bookmark.html" aria-label="Bookmark Page">
 					<img src="../assets/bookmark.png" alt="Linked icon to bookmarks page" />
+				</a>
+				<a href="./form.html" aria-label="Form Page">
+					<img src="../assets/add.png" alt="Linked icon to form page" />
 				</a>
 				<a href="#" aria-label="Profile Page">
 					<img src="../assets/profile_filled.png" alt="Linked icon to profile page" />

@@ -3,16 +3,19 @@
 	text-align: center;
 	width: 20ch;
 	margin: 3rem auto;
-	border: var(--border-base);
+	border: var(--border-base-300);
 	border-radius: var(--border-radius-base);
 	padding: 1em;
+	box-shadow: 0 0 0 0;
 	cursor: pointer;
+	transition: 300ms all ease-in-out;
+
+	&:hover {
+		border-radius: 0;
+		box-shadow: 0px 0px 10px white;
+	}
 }
 
-.button__quiz--showAnswer {
+.quiz-button__showAnswer {
 	/* background-color: teal; */
-}
-
-.button__quiz--hideAnswer {
-	/* background-color: coral; */
 }

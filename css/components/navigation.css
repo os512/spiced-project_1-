@@ -3,24 +3,30 @@ footer {
 	bottom: 0;
 	width: 100%;
 	background-color: var(--color-dark-100);
+	border-block: var(--border-base-300);
 }
 
 nav {
 	display: flex;
 	justify-content: space-around;
-	border-block: var(--border-base);
+	margin-inline: auto;
+	width: 60%;
 }
 
 nav a {
 	background-color: var(--color-dark-100);
 	border-style: none;
-	padding: 1rem 4rem;
+	padding: 1rem 2rem;
 	cursor: pointer;
 }
 
 nav a:disabled {
 	cursor: default;
 	background-color: var(--color-dark-300);
+}
+
+nav img {
+	scale:80%;
 }
 
 footer img {

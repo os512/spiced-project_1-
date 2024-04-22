@@ -1,0 +1,35 @@
+@import "./styles.css";
+
+h2 {
+	margin-block-end: 1rem;
+}
+
+.form__description {
+	margin-block-end: 2rem;
+}
+
+form {
+	--margin: 3rem;
+
+	display: flex;
+	flex-direction: column;
+	margin-block-end: calc(var(--margin) * 3);
+
+	& > :nth-child(odd) {
+		margin-block-start: var(--margin);
+	}
+
+	& > :nth-child(even) {
+		margin-block-start: calc(var(--margin) / 5);
+	}
+}
+
+.input__wrapper {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+
+.form__character-count {
+	text-align: end;
+}

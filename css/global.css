@@ -13,12 +13,27 @@
 	--color-dark-600: hsl(0, 0%, 30%);
 	--color-dark-900: hsl(0, 0%, 0%);
 
-	--border-base: solid 3px var(--color-dark-300);
+	--border-base-100: solid 3px var(--color-dark-100);
+	--border-base-300: solid 3px var(--color-dark-300);
 	--border-tags: solid 1px var(--color-dark-600);
 	--border-radius-base: 0.5em;
 	--border-radius-tags: 0.25em;
 
+	--button-width: 100px;
+
 	--ff-sans: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	--ff-user-input: monospace;
+
+	--fsize-base: 100%;
+}
+
+html {
+	font-size: var(--fsize-base);
+
+	& textarea,
+	input {
+		font-size: var(--fsize-base);
+	}
 }
 
 body,
@@ -28,12 +43,56 @@ h3 {
 	font-family: var(--ff-sans);
 }
 
+h2,
+p {
+	color: var(--color-dark-900);
+	font-weight: 600;
+}
+
 a {
 	text-decoration: none;
 }
 
 main {
-	margin-block-end: 12rem;
+	padding-block: 6rem 12rem;
+	padding-inline: 10%;
+	/* background-color: lightcoral; */
+	color: var(--color-dark-900);
+	min-height: 100vh;
+}
+
+section {
+	--width: 700px;
+
+	max-width: var(--width);
+	margin-inline: auto;
+	padding-inline: min(10%, calc(var(--width) * 0.1));
+}
+
+textarea,
+input,
+button {
+	border-radius: var(--border-radius-base);
+	border-style: none;
+	border: var(--border-base-300);
+	padding: 1em;
+	font-family: var(--ff-user-input);
+}
+
+button {
+	align-self: flex-end;
+	width: var(--button-width);
+	border: var(--border-base-100);
+	background-color: var(--color-dark-600);
+	color: var(--color-dark-100);
+	cursor: pointer;
+	transition: 300ms all ease-in-out;
+}
+
+button:hover {
+	background-color: var(--color-dark-100);
+	border: var(--border-base-300);
+	color: var(--color-dark-600);
 }
 
 /**************************
@@ -47,9 +106,17 @@ main {
 	}
 
 	h1,
-	h2,
 	h3 {
 		color: var(--color-dark-500);
+	}
+
+	h2,
+	p {
+		color: var(--color-dark-100);
+	}
+
+	.button__quiz {
+		color: var(--color-dark-100);
 	}
 
 	.slider:before {

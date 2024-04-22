@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../css/form.css" />
+		<link rel="stylesheet" href="../css/components/card.css" />
+		<link rel="stylesheet" href="../css/components/button_quiz.css" />
+		<link rel="stylesheet" href="../css/components/tag.css" />
+
+		<link rel="stylesheet" href="../css/components/navigation.css" />
+		<link rel="shortcut icon" href="data:x-icon" type="image/x-icon" />
+		<script src="../js/form.js" defer></script>
+	</head>
+	<body>
+		<header class="header header__quiz" aria-labelledby="title">
+			<h1 id="title">Quiz App</h1>
+		</header>
+		<main class="main main__form">
+			<section class="card__form">
+				<h2 id="form__title" class="form__title">New Card</h2>
+				<p id="form__description" class="form__description">
+					Get ready to spice up your quiz game! Just dive into the form below and start creating
+					your own. Let's make learning fun!
+				</p>
+				<form aria-labelledby="form__title" data-form="form-new-quiz-card">
+					<div class="input__wrapper">
+						<label for="form__question">Your question:</label>
+						<textarea
+							name="form__question"
+							id="form__question"
+							data-form-question="form-question"
+							cols="30"
+							rows="4"
+							placeholder="Add your quiz question here..."
+							maxlength="150"
+							autofocus
+							required
+						></textarea>
+					</div>
+					<small class="form__character-count"
+						>(<span data-js="amountLeft-form-question"></span> characters left)
+					</small>
+					<div class="input__wrapper">
+						<label for="form__answer">Your answer:</label>
+						<textarea
+							name="form__answer"
+							id="form__answer"
+							data-form-answer="form-answer"
+							cols="30"
+							rows="4"
+							placeholder="Add your quiz answer here..."
+							maxlength="150"
+							required
+						></textarea>
+					</div>
+					<small class="form__character-count"
+					>(<span data-js="amountLeft-form-answer"></span> characters left)
+				</small>
+					<label for="form__tag">Your tag:</label>
+					<input
+						type="text"
+						name="form__tag"
+						id="form__tag"
+						data-form-tag="form-tag"
+						placeholder="Add your quiz tag here..."
+						required
+					/>
+					<button type="submit">Submit</button>
+				</form>
+			</section>
+		</main>
+		<footer>
+			<nav>
+				<a href="../index.html" aria-label="Start Page">
+					<img src="../assets/home.png" alt="Linked icon to start page" />
+				</a>
+				<a href="./bookmark.html" aria-label="Bookmark Page">
+					<img src="../assets/bookmark.png" alt="Linked icon to bookmarks page" />
+				</a>
+				<a href="#" aria-label="Form Page">
+					<img src="../assets/add_filled.png" alt="Linked icon to form page" />
+				</a>
+				<a href="./profile.html" aria-label="Profile Page">
+					<img src="../assets/profile.png" alt="Linked icon to profile page" />
+				</a>
+			</nav>
+		</footer>
+	</body>
+</html>
