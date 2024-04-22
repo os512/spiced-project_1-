@@ -16,6 +16,7 @@
 	position: absolute;
 	right: 1rem;
 	top: calc(var(--size) / -2);
+	cursor: pointer;
 }
 
 .card__title,

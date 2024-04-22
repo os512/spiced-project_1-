@@ -48,6 +48,12 @@
 	border: solid 3px var(--color-dark-900);
 	padding: 0.5rem 1rem;
 	border-radius: 0.5rem;
+	transition: var(--transition-base);
+
+	/* TODO OS: temporarily added */
+	&:hover {
+		background-color: var(--color-dark-200);
+	}
 }
 
 .counter__number {
