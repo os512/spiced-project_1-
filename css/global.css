@@ -115,6 +115,10 @@ button:hover {
 		color: var(--color-dark-100);
 	}
 
+	.button__quiz {
+		color: var(--color-dark-100);
+	}
+
 	.slider:before {
 		background-color: var(--color-dark-500);
 	}
