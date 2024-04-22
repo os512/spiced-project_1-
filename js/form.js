@@ -38,6 +38,14 @@
 			// Hide/unhide answer
 			createdCardElements.paragraph.classList.toggle("hidden");
 		});
+
+		// Reset the form and the character counter
+		// 
+		userCreatedQuestion.value = "";
+		userCreatedAnswer.value = "";
+		userCreatedTag.value = "";
+		updateCharactersLeft(userCreatedQuestion, "maxlength", charCountPrintQuestion);
+		updateCharactersLeft(userCreatedAnswer, "maxlength", charCountPrintAnswer);
 	});
 
 	/**
@@ -112,17 +120,23 @@
 	 */
 	function updateCharactersLeft(inputElement, maxLengthAttribute, charCountPrint) {
 		const maxLength = +inputElement.getAttribute(maxLengthAttribute);
+		let charactersLeft;
 
 		function updateDisplay() {
-			const charactersLeft = maxLength - inputElement.value.length;
+			charactersLeft = maxLength - inputElement.value.length;
 			charCountPrint.textContent = charactersLeft;
+
+			return charactersLeft;
 		}
+
 		// Retrieve correct number for exisiting text before input event is triggered
 		updateDisplay();
 
 		inputElement.addEventListener("input", updateDisplay);
+
+		return charactersLeft;
 	}
-	// Apply generic function to both question and answer inputs
+	// Apply generic function to both AuserCreatedAnswer and answer inputs
 	updateCharactersLeft(userCreatedQuestion, "maxlength", charCountPrintQuestion);
 	updateCharactersLeft(userCreatedAnswer, "maxlength", charCountPrintAnswer);
 })();
