@@ -8,10 +8,15 @@
 
 :root {
 	--color-dark-100: hsl(0, 0%, 100%);
+	--color-dark-200: hsl(0, 0%, 95%);
 	--color-dark-300: hsl(0, 0%, 80%);
 	--color-dark-500: hsl(0, 0%, 50%);
 	--color-dark-600: hsl(0, 0%, 30%);
 	--color-dark-900: hsl(0, 0%, 0%);
+
+	--color-accent: hsl(0, 100%, 50%);
+	/* --color-accent: hsl(50, 100%, 40%); */
+	/* --color-accent: hsl(170, 100%, 40%); */
 
 	--border-base-100: solid 3px var(--color-dark-100);
 	--border-base-300: solid 3px var(--color-dark-300);
@@ -25,6 +30,8 @@
 	--ff-user-input: monospace;
 
 	--fsize-base: 100%;
+
+	--transition-base: 400ms all ease-in-out;
 }
 
 html {
@@ -86,7 +93,7 @@ button {
 	background-color: var(--color-dark-600);
 	color: var(--color-dark-100);
 	cursor: pointer;
-	transition: 300ms all ease-in-out;
+	transition: var(--transition-base);
 }
 
 button:hover {
@@ -118,6 +125,11 @@ button:hover {
 
 	.button__quiz {
 		color: var(--color-dark-100);
+	}
+
+	/* TODO OS: temporarily added */
+	.counter__wrapper:hover {
+		background-color: var(--color-dark-500) !important;
 	}
 
 	.slider:before {

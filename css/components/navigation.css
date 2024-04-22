@@ -18,15 +18,19 @@ nav a {
 	border-style: none;
 	padding: 1rem 2rem;
 	cursor: pointer;
-}
 
-nav a:disabled {
-	cursor: default;
-	background-color: var(--color-dark-300);
+	&:active {
+		background-color: var(--color-accent);
+	}
 }
 
 nav img {
-	scale:80%;
+	scale: 80%;
+	transition: var(--transition-base);
+
+	&:hover {
+		opacity: 0.3;
+	}
 }
 
 footer img {
@@ -35,4 +39,10 @@ footer img {
 
 .active {
 	background-color: var(--color-dark-300);
+	cursor: default;
+	transition: var(--transition-base);
+
+	& img:hover {
+		opacity: 1;
+	}
 }
